@@ -18,5 +18,14 @@
         android:id="@+id/loginFragment"
         android:name="com.example.omnimove_mobile.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_berandaFragment"
+            app:destination="@id/berandaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/berandaFragment"
+        android:name="com.example.omnimove_mobile.BerandaFragment"
+        android:label="fragment_beranda"
+        tools:layout="@layout/fragment_beranda" />
 </navigation>
